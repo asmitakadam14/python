@@ -1,0 +1,20 @@
+
+prices = []
+
+n = int(input("Enter number of assets: "))
+
+for i in range(n):
+    price = float(input("Enter asset price: "))
+    prices.append(price)
+
+
+prices.sort(reverse=True)
+
+print("\nSorted prices:")
+print(prices)
+
+
+print("\nTop 3 highest prices:")
+
+for price in prices[:3]:
+    print(price)
